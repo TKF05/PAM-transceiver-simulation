@@ -23,15 +23,15 @@ $$
   - 3e4 bits
   - E<sub>b</sub>/N<sub>0</sub> (dB) = 12
 
-**8-PAM Received Constellation**
+**8-PAM Received Constellation** \n
 <img src="figures/Constellation.png" alt="8-PAM Received Constellation" width="400">
 
-**Transmitted Signal Eye Diagram (No AWGN)**
+**Transmitted Signal Eye Diagram (No AWGN)** \n
 <img src="figures/TxSig.png" alt="Transmitted Signal Eye Diagram (No AWGN)" width="400">
 
-**Noisy Signal Eye Diagram**
+**Noisy Signal Eye Diagram** \n
 <img src="figures/NoisySig.png" alt="Noisy Signal Eye Diagram (Simulated Channel)" width="400">
 
-**Received Signal Eye Diagram**
+**Received Signal Eye Diagram** \n
 <img src="figures/RxSig.png" alt="Received Signal Eye Diagram" width="400">
 
