@@ -17,6 +17,10 @@ $$
 
   - **Generates Figures and BER data** — Generates Constellation of Received Signals and Eye Diagrams for Transmitted Signal, Noisy Signal, and Received Signal.
 
+## General Block Diagram
+
+<img src="figures/PAMblockdiagram.svg" alt="Block diagram" style="width: 80%;">
+
 ## Figures
   **Variables used for example figures:**
   - Modulation Order = 8
