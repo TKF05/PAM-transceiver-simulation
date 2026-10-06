@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,calc}
+
+\begin{document}
+
+\tikzset{
+    block/.style = {
+        draw,
+        fill=white,
+        rectangle,
+        minimum height=3em,
+        minimum width=3em
+    },
+    input/.style = {coordinate},
+    output/.style = {coordinate},
+    tmp/.style = {coordinate},
+    every node/.style = {font=\normalsize}
+}
+
+\begin{tikzpicture}[
+    auto,
+    node distance=1.5cm,
+    >=latex'
+]
+
+% ============================================================
+% TRANSMITTER
+% ============================================================
+
+\node [input, name=bits] {};
+
+\node [block, right=0.7cm of bits,
+      minimum width=1.0cm,
+      minimum height=1.0cm] (sp) {S/P};
+
+\node [block, right=1.0cm of sp,
+      minimum width=1.7cm,
+      minimum height=2.0cm] (lut) {LUT};
+
+\node [block, right=1.0cm of lut,
+      minimum width=1.0cm,
+      minimum height=1.0cm] (upsample) {$\uparrow N$};
+
+\node [block, right=1.0cm of upsample,
+      minimum width=1.8cm,
+      minimum height=2.0cm,
+      align=center] (filter) {pulse\\shaping\\filter};
+
+\node [output, right=1.0cm of filter] (st) {s(t)};
+
+% Transmitter connections
+\draw[->] (bits) -- node[above] {} (sp);
+\draw[->] (sp) -- (lut);
+\draw[->] (lut) -- (upsample);
+\draw[->] (upsample) -- (filter);
+\draw[->] (filter) -- (st);
+
+% Labels
+\node[left=0.1cm of bits] {$\text{bits}$};
+\node[right=o.1cm of st] {$\text{s(t)}$};
+\node[above=0.25cm of sp] (log) {$\log_2 M$ bits};
+\node[below=0.25cm of filter] {$h(n)=p(nT)$};
+\node[right=0.5cm of sp] (node);
+\draw[->] (log) -- (node);
+
+
+% ============================================================
+% RECEIVER
+% ============================================================
+
+\node [input, below=3.4cm of bits] (rinput) {};
+
+\node [block, right=1.0cm of rinput,
+      minimum width=2.0cm,
+      minimum height=2.0cm,
+      align=center] (matched) {matched\\filter};
+
+\node [block, right=1.0cm of matched,
+      minimum width=3.0cm,
+      minimum height=2.0cm, 
+      align=center] (decision) {decision\\block};
+
+\node [output, right=1.0cm of decision] (ahat) {};
+
+% Receiver connections
+\draw[->] (rinput) -- (matched);
+\draw[->] (matched) -- (decision);
+\draw[->] (decision) -- (ahat);
+
+% Receiver labels
+\node[above=1cm of rinput] {$r(t)= s(t) + w(t)$}
+\node[left=0.1cm of rinput] {$r(t)$};
+\node[below=0.25cm of matched] {$h(n)=p(-nT)$};
+\node[right=0.1cm of ahat] {$\hat a(k)$};
+
+\end{tikzpicture}
+
+\end{document}
+
