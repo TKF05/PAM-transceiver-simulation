@@ -23,36 +23,27 @@ $$
   - 3e4 bits
   - E<sub>b</sub>/N<sub>0</sub> (dB) = 12
 
-<div align="center">
-
-<strong>8-PAM Received Constellation</strong>
-
-<img src="figures/Constellation.png" alt="8-PAM Received Constellation" width="400">
-
-</div>
-
-<div align="center">
-
-<strong>Transmitted Signal Eye Diagram (No AWGN)</strong>
-
-<img src="figures/TxSig.png" alt="Transmitted Signal Eye Diagram (No AWGN)" width="400">
-
-</div>
-
-<div align="center">
-
-<strong>Noisy Signal Eye Diagram (Simulated Channel)</strong>
-
-<img src="figures/NoisySig.png" alt="Noisy Signal Eye Diagram (Simulated Channel)" width="400">
-
-</div>
-
-<div align="center">
-
-<strong>Received Signal Eye Diagram</strong>
-
-<img src="figures/RxSig.png" alt="Received Signal Eye Diagram" width="400">
-
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <strong>8-PAM Received Constellation</strong><br><br>
+      <img src="figures/Constellation.png" alt="8-PAM Received Constellation" width="350">
+    </td>
+    <td align="center">
+      <strong>Transmitted Signal Eye Diagram (No AWGN)</strong><br><br>
+      <img src="figures/TxSig.png" alt="Transmitted Signal Eye Diagram (No AWGN)" width="350">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>Noisy Signal Eye Diagram (Simulated Channel)</strong><br><br>
+      <img src="figures/NoisySig.png" alt="Noisy Signal Eye Diagram (Simulated Channel)" width="350">
+    </td>
+    <td align="center">
+      <strong>Received Signal Eye Diagram</strong><br><br>
+      <img src="figures/RxSig.png" alt="Received Signal Eye Diagram" width="350">
+    </td>
+  </tr>
+</table>
 
 
