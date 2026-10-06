@@ -4,15 +4,6 @@
 ## Features
   - **Configurable Modulation Order** — Supports any power-of-two PAM order (2-PAM, 4-PAM, 8-PAM, 16-PAM, 32-PAM, ...),  with no technical fixed modulation-order limit in the simulation.
   - **Configurable SNR** — Simulated Channel features configurable E<sub>b</sub>/N<sub>0</sub> (dB) to change SNR where 
-$$
-\mathrm{SNR}_{\mathrm{dB}} =
-(E_b/N_0)_{\mathrm{dB}}
-+
-10\log_{10}
-\left(
-\frac{\log_2(M)}{\mathrm{sps}}
-\right)
-$$
   - **Generates Figures and BER data** — Generates Constellation of Received Signals and Eye Diagrams for Transmitted Signal, Noisy Signal, and Received Signal.
 
 ## Figures
