@@ -22,13 +22,12 @@ $$
   - Modulation Order = 8
   - 3e4 bits
   - E<sub>b</sub>/N<sub>0</sub> (dB) = 12
-    
-![8PAM Received Constellation](figures/Constellation.png)
 
-![Transmitted Signal Eye Diagram (No AWGN)](figures/TxSig.png)
+<img src="figures/Constellation.png" alt="8-PAM Received Constellation" width="400">
 
-![Noisy Signal Eye Diagram (Simulated Channel)](figures/NoisySig.png)
+<img src="figures/TxSig.png" alt="Transmitted Signal Eye Diagram (No AWGN)" width="400">
 
-![Received Signal Eye Diagram](figures/RxSig.png)
+<img src="figures/NoisySig.png" alt="Noisy Signal Eye Diagram (Simulated Channel)" width="400">
 
+<img src="figures/RxSig.png" alt="Received Signal Eye Diagram" width="400">
 
