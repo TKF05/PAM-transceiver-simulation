@@ -1,5 +1,5 @@
 # PAM-transceiver-simulation
-  A MATLAB Simulation of Pulse Amplitude Modulation (PAM) complete digital communication system. Includes simulated transmission and reception chain. The project demonstrates the entire PAM system with pulse shaping, simulated additive white Gaussian noise (AWGN) and is recovered using a matched filter and decision block.
+  A MATLAB Simulation of Pulse Amplitude Modulation (PAM) digital communication system. Includes complete simulated transmission and reception chain. The project demonstrates the entire PAM system with pulse shaping, simulated additive white Gaussian noise (AWGN) and is recovered using a matched filter and decision block.
 
 ## Features
   - **Configurable Modulation Order** — Supports any power-of-two PAM order (2-PAM, 4-PAM, 8-PAM, 16-PAM, 32-PAM, ...),  with no technical fixed modulation-order limit in the simulation.
@@ -22,6 +22,10 @@ $$
 <div align="center">
 <img src="figures/PAMblockdiagram.svg" alt="Block diagram" style="width: 80%;">
 </div>
+
+The signal is upsampled by N where N is the sps variable (Samples per Symbol)
+
+The upsampling and Pulse Shaping are taken care of with the RaisedCosineTransmitFilter object in the MATLAB Communications Toolbox.
 
 ## Figures
   **Variables used for example figures:**
