@@ -19,7 +19,9 @@ $$
 
 ## General Block Diagram
 
+<div align="center">
 <img src="figures/PAMblockdiagram.svg" alt="Block diagram" style="width: 80%;">
+</div>
 
 ## Figures
   **Variables used for example figures:**
